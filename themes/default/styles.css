@@ -9,6 +9,8 @@
 
     /*GENERICS*/
         /*COLORS*/
+            --default-transition-time: 0.3s;
+            --small-font-size: 10px;
             --text-color: var(--whib-840);
             --focus-color: var(--honeymoon-400);
 
@@ -19,35 +21,43 @@
     /*COMPONENTS*/
         /*DIALOG*/
             --dialog-background-a: var(--whib-120);
-            --dialog-border: black;
-            --dialog-shadow: black;
+            --dialog-border: var(--whib-960);
+            --dialog-shadow: var(--whib-960);
             --dialog-button-background: var(--whib-60);
             --dialog-background-image-offshadow: var(--shadowing-300);
 
         /*BUTTON*/
-            --button-border: black;
-            --button-inset-shadow: var(--shadowing-400);
-            --button-inset-shadow-top: var(--shadowing-500);
+            /*GENERIC*/
+                --button-border: inset 1px solid var(--whib-960);
+                --button-inset-shadow-bottom: inset -2px -2px 0px 0px var(--shadowing-400);
+                --button-inset-shadow-top: inset 2px 2px 0px 0px var(--white-shadowing-500);
+    
+            /*ANIMATIONS*/
+                /*HOVER*/
+                    --button-hover-translate: -3px -3px;
+                    --button-hover-shadow:  3px 3px 0px 0px var(--whib-960);
             
-            --button-green: var(--chartreuse-500);
-            --button-green-hover: var(--chartreuse-400);
-            --button-green-active: var(--chartreuse-300);
-
-            --button-red: var(--crimson-500);
-            --button-red-hover: var(--crimson-400);
-            --button-red-active: var(--crimson-300);
-
-            --button-orange: var(--orange-red-400);
-            --button-orange-hover: var(--orange-red-300);
-            --button-orange-active: var(--orange-red-200);
-
-            --button-primary: var(--honeymoon-400);
-            --button-primary-hover: var(--honeymoon-300);
-            --button-primary-active: var(--honeymoon-200);
-
-            --button-default: var(--whib-180);
-            --button-default-hover: var(--whib-120);
-            --button-default-active: var(--whib-60);
+            /*PADDINGS*/
+                --button-small-padding: 10px;
+                --button-medium-padding: 15px;
+                --button-large-padding: 20px;
+            
+            /*THEMES*/
+                --button-green: var(--chartreuse-500);
+                --button-green-hover: var(--chartreuse-400);
+                --button-green-active: var(--chartreuse-300);
+                --button-red: var(--crimson-500);
+                --button-red-hover: var(--crimson-400);
+                --button-red-active: var(--crimson-300);
+                --button-orange: var(--orange-red-400);
+                --button-orange-hover: var(--orange-red-300);
+                --button-orange-active: var(--orange-red-200);
+                --button-primary: var(--honeymoon-400);
+                --button-primary-hover: var(--honeymoon-300);
+                --button-primary-active: var(--honeymoon-200);
+                --button-default: var(--whib-180);
+                --button-default-hover: var(--whib-120);
+                --button-default-active: var(--whib-60);
 
         /* INPUT */
             --input-background: var(--whib-60);
@@ -59,8 +69,29 @@
 }
 
 .b-button {
-    font-size: 10px;
+    font-size: var(--small-font-size);
     color: var(--text-color);
+    border: var(--button-border);
+    box-shadow: var(--button-inset-shadow-top), var(--button-inset-shadow-bottom);
+    transition: var(--default-transition-time);
+}
+.b-button:hover {
+    translate: var(--button-hover-translate);
+}
+.b-button:active {
+    outline: var(--focus-color);
+}
+
+.b-button .b-button-small-padding {
+    padding: var(--button-small-padding);
+}
+
+.b-button .b-button-medium-padding {
+    padding: var(--button-medium-padding);
+}
+
+.b-button .b-button-large-padding {
+    padding: var(--button-large-padding);
 }
 
 /*DEFAULT*/

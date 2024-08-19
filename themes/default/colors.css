@@ -26,6 +26,17 @@
     --shadowing-800: #00000088;
     --shadowing-900: #00000099;
     --shadowing-950: #000000AA;
+    
+    --white-shadowing-100: #ffffff11;
+    --white-shadowing-200: #ffffff22;
+    --white-shadowing-300: #ffffff33;
+    --white-shadowing-400: #ffffff44;
+    --white-shadowing-500: #ffffff55;
+    --white-shadowing-600: #ffffff66;
+    --white-shadowing-700: #ffffff77;
+    --white-shadowing-800: #ffffff88;
+    --white-shadowing-900: #ffffff99;
+    --white-shadowing-950: #ffffffAA;
 
     --honeymoon-900: #8D4200;
     --honeymoon-800: #A45D02;
