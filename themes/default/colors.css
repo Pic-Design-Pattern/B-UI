@@ -16,6 +16,17 @@
     --whib-120: #E6E6E6;
     --whib-60: #FFFFFF;
 
+    --shadowing-100: #00000011;
+    --shadowing-200: #00000022;
+    --shadowing-300: #00000033;
+    --shadowing-400: #00000044;
+    --shadowing-500: #00000055;
+    --shadowing-600: #00000066;
+    --shadowing-700: #00000077;
+    --shadowing-800: #00000088;
+    --shadowing-900: #00000099;
+    --shadowing-950: #000000AA;
+
     --honeymoon-900: #8D4200;
     --honeymoon-800: #A45D02;
     --honeymoon-700: #BB7804;
@@ -55,4 +66,18 @@
     --chartreuse-100: #BDFF7D;
     --chartreuse-50: #CAFF97;
     --chartreuse-25: #D5FFAC;
+
+    --orange-red-975: #421200;
+--orange-red-950: #4E1600;
+--orange-red-900: #601B00;
+--orange-red-800: #7A2300;
+--orange-red-700: #9A2E00;
+--orange-red-600: #C03B00;
+--orange-red-500: #FF4500; /*<-------*/
+--orange-red-400: #FF6126;
+--orange-red-300: #FF8A59;
+--orange-red-200: #FFAB80;
+--orange-red-100: #FFC4A1;
+--orange-red-50: #FFD7BA;
+--orange-red-25: #FFC2AC;
 }
