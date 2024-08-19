@@ -1,4 +1,58 @@
-@font-face {
-    font-family: "Pix Chicago";
-    src: url(./fonts/pixChicago.ttf);
+:root {
+    --whib-960: #000000;
+    --whib-900: #111111;
+    --whib-840: #222222;
+    --whib-780: #333333;
+    --whib-720: #444444;
+    --whib-660: #555555;
+    --whib-600: #666666;
+    --whib-540: #777777;
+    --whib-480: #8D8D8D;
+    --whib-420: #999999;
+    --whib-360: #AAAAAA;
+    --whib-300: #BCBCBC;
+    --whib-240: #CCCCCC;
+    --whib-180: #DDDDDD;
+    --whib-120: #E6E6E6;
+    --whib-60: #FFFFFF;
+
+    --honeymoon-900: #8D4200;
+    --honeymoon-800: #A45D02;
+    --honeymoon-700: #BB7804;
+    --honeymoon-600: #D19406;
+    --honeymoon-500: #E8AF08;
+    --honeymoon-400: #FFCA0A; /*<-------*/
+    --honeymoon-300: #FFCD27;
+    --honeymoon-200: #FFCF44;
+    --honeymoon-100: #FFD262;
+    --honeymoon-50:  #FFD47F;
+    --honeymoon-25:  #FFD79C;
+
+    --crimson-975: #3A050F;
+    --crimson-950: #480613;
+    --crimson-900: #5A0818;
+    --crimson-800: #710A1E;
+    --crimson-700: #8D0D26;
+    --crimson-600: #B01030;
+    --crimson-500: #DC143C; /*<-------*/
+    --crimson-400: #E34363;
+    --crimson-300: #E96982;
+    --crimson-200: #ED879B;
+    --crimson-100: #F19FAF;
+    --crimson-50: #F4B2BF;
+    --crimson-25: #F6C1CC;
+    
+    --chartreuse-975: #1B3500;
+    --chartreuse-950: #224200;
+    --chartreuse-900: #2A5300;
+    --chartreuse-800: #356800;
+    --chartreuse-700: #428200;
+    --chartreuse-600: #52A300;
+    --chartreuse-500: #66CC00;
+    --chartreuse-400: #7FFF00;
+    --chartreuse-300: #99FF33; /*<-------*/
+    --chartreuse-200: #ADFF5C;
+    --chartreuse-100: #BDFF7D;
+    --chartreuse-50: #CAFF97;
+    --chartreuse-25: #D5FFAC;
 }

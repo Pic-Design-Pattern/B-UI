@@ -1,5 +1,10 @@
 @import "./colors.css";
 
+@font-face {
+    font-family: "Pix Chicago";
+    src: url(./fonts/pixChicago.ttf);
+}
+
 :root {
 
     /*GENERICS*/
