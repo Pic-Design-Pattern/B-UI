@@ -9,14 +9,13 @@
 
     /*GENERICS*/
         /*COLORS*/
-            --default-transition-time: 0.3s;
-            --small-font-size: 10px;
             --text-color: var(--whib-840);
             --focus-color: var(--honeymoon-400);
 
         /*COMPOSITIONS*/
             --default-transition-time: 0.3s;
             --default-outline-focus-effect: var(--honeymoon-400) solid 3px;
+            --small-font-size: 10px;
 
     /*COMPONENTS*/
         /*DIALOG*/
@@ -76,7 +75,7 @@
     transition: var(--default-transition-time);
 }
 .b-button:hover {
-    translate: var(--button-hover-translate);
+    transform: translate(var(--button-hover-translate));
 }
 .b-button:active {
     outline: var(--focus-color);
