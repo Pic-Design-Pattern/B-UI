@@ -18,13 +18,6 @@
             --small-font-size: 10px;
 
     /*COMPONENTS*/
-        /*DIALOG*/
-            --dialog-background-a: var(--whib-120);
-            --dialog-border: var(--whib-960);
-            --dialog-shadow: var(--whib-960);
-            --dialog-button-background: var(--whib-60);
-            --dialog-background-image-offshadow: var(--shadowing-300);
-
         /*BUTTON*/
             /*GENERIC*/
                 --button-border: inset 1px solid var(--whib-960);
@@ -58,12 +51,27 @@
                 --button-default-hover: var(--whib-120);
                 --button-default-active: var(--whib-60);
 
-        /* INPUT */
-            --input-background: var(--whib-60);
-            --input-border: var(--whib-960);
-            --input-inset-shadow: var(--shadowing-500);
-            --input-shadow: var(--whib-60);
-            --input-shadow-focus: var(--honeymoon-400);
+        /*DIALOG*/
+            /*GENERIC*/
+                --dialog-border: 1px solid var(--whib-960);
+        
+            /*PADDINGS*/
+                --dialog-padding: 10px;
+
+            /*SHADOWS*/
+                --dialog-top-left-inset-shadow: inset 2px 2px 0px 0px var(--whib-60);
+                --dialog-bottom-right-inset-shadow: inset -2px -2px 0px 0px var(--whib-420);
+                --dialog-content-top-left-shadow: 2px 2px 0px 0px var(--whib-420);
+                --dialog-content-bottom-right-shadow: -2px -2px 0px 0px var(--whib-60);
+                --dialog-shadow: 4px 4px 0px 0px var(--whib-960);
+                --dialog-shadow-blur: 6px 6px 0px 4px var(--shadowing-300);
+            
+                
+            --dialog-background-a: var(--whib-120);
+            --dialog-border: var(--whib-960);
+            --dialog-shadow: var(--whib-960);
+            --dialog-button-background: var(--whib-60);
+            --dialog-background-image-offshadow: var(--shadowing-300);
 
 }
 
