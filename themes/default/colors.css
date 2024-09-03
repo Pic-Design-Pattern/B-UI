@@ -1,4 +1,6 @@
 :root {
+    --hidden-color: #00000000;
+
     --whib-960: #000000;
     --whib-900: #111111;
     --whib-840: #222222;
@@ -79,16 +81,16 @@
     --chartreuse-25: #D5FFAC;
 
     --orange-red-975: #421200;
---orange-red-950: #4E1600;
---orange-red-900: #601B00;
---orange-red-800: #7A2300;
---orange-red-700: #9A2E00;
---orange-red-600: #C03B00;
---orange-red-500: #FF4500; /*<-------*/
---orange-red-400: #FF6126;
---orange-red-300: #FF8A59;
---orange-red-200: #FFAB80;
---orange-red-100: #FFC4A1;
---orange-red-50: #FFD7BA;
---orange-red-25: #FFC2AC;
+    --orange-red-950: #4E1600;
+    --orange-red-900: #601B00;
+    --orange-red-800: #7A2300;
+    --orange-red-700: #9A2E00;
+    --orange-red-600: #C03B00;
+    --orange-red-500: #FF4500; /*<-------*/
+    --orange-red-400: #FF6126;
+    --orange-red-300: #FF8A59;
+    --orange-red-200: #FFAB80;
+    --orange-red-100: #FFC4A1;
+    --orange-red-50: #FFD7BA;
+    --orange-red-25: #FFC2AC;
 }

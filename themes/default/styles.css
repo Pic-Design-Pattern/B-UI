@@ -2,13 +2,18 @@
 
 @font-face {
     font-family: "Pix Chicago";
-    src: url(./fonts/pixChicago.ttf);
+    src: url("./fonts/pixChicago.woff");
 }
 
 :root {
 
     /*GENERICS*/
+        /*TEXT*/
+            --font-family-a: "Pix Chicago";
+            --font-family-b: "system-ui";
+
         /*COLORS*/
+            --hidden: var(--hidden-color);
             --text-color: var(--whib-840);
             --focus-color: var(--honeymoon-400);
 
@@ -20,14 +25,18 @@
     /*COMPONENTS*/
         /*BUTTON*/
             /*GENERIC*/
-                --button-border: inset 1px solid var(--whib-960);
+                --button-border: 1px solid var(--whib-960);
                 --button-inset-shadow-bottom: inset -2px -2px 0px 0px var(--shadowing-400);
                 --button-inset-shadow-top: inset 2px 2px 0px 0px var(--white-shadowing-500);
+                --button-hidden-outline: var(--hidden) 3px solid;
     
             /*ANIMATIONS*/
                 /*HOVER*/
                     --button-hover-translate: -3px -3px;
                     --button-hover-shadow:  3px 3px 0px 0px var(--whib-960);
+
+                /*FOCUS*/
+                    --button-focus-outline: var(--focus-color) 3px solid;
             
             /*PADDINGS*/
                 --button-small-padding: 10px;
@@ -76,6 +85,9 @@
 }
 
 .b-button {
+    outline: var(--button-hidden-outline);
+    cursor: pointer;
+    font-family: "Pix Chicago", sans-serif;
     font-size: var(--small-font-size);
     color: var(--text-color);
     border: var(--button-border);
@@ -86,72 +98,72 @@
     transform: translate(var(--button-hover-translate));
 }
 .b-button:active {
-    outline: var(--focus-color);
+    outline: var(--button-focus-outline);
 }
 
-.b-button .b-button-small-padding {
+.b-button-small-padding {
     padding: var(--button-small-padding);
 }
 
-.b-button .b-button-medium-padding {
+.b-button-medium-padding {
     padding: var(--button-medium-padding);
 }
 
-.b-button .b-button-large-padding {
+.b-button-large-padding {
     padding: var(--button-large-padding);
 }
 
 /*DEFAULT*/
-.b-button .b-button-default {
+.b-button-default {
     background-color: var(--button-default);
 }
-.b-button .b-button-default:hover {
+.b-button-default:hover {
     background-color: var(--button-default-hover);
 }
-.b-button .b-button-default:active {
+.b-button-default:active {
     background-color: var(--button-default-active);
 }
 
 /*PRIMARY*/
-.b-button .b-button-primary {
+.b-button-primary {
     background-color: var(--button-primary);
 }
-.b-button .b-button-primary:hover {
+.b-button-primary:hover {
     background-color: var(--button-primary-hover);
 }
-.b-button .b-button-primary:active {
+.b-button-primary:active {
     background-color: var(--button-primary-active);
 }
 
 /*ORANGE*/
-.b-button .b-button-orange {
+.b-button-orange {
     background-color: var(--button-orange);
 }
-.b-button .b-button-orange:hover {
+.b-button-orange:hover {
     background-color: var(--button-orange-hover);
 }
-.b-button .b-button-orange:active {
+.b-button-orange:active {
     background-color: var(--button-orange-active);
 }
 
 /*GREEN*/
-.b-button .b-button-green {
+.b-button-green {
     background-color: var(--button-green);
 }
-.b-button .b-button-green:hover {
+.b-button-green:hover {
     background-color: var(--button-green-hover);
 }
-.b-button .b-button-green:active {
+.b-button-green:active {
     background-color: var(--button-green-active);
 }
 
 /*RED*/
-.b-button .b-button-red {
+.b-button-red {
     background-color: var(--button-red);
 }
-.b-button .b-button-red:hover {
+.b-button-red:hover {
     background-color: var(--button-red-hover);
 }
-.b-button .b-button-red:active {
+.b-button-red:active {
     background-color: var(--button-red-active);
 }

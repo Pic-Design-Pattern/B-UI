@@ -1,10 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
+import { Button } from '@B-UI/components'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Button 
+      color='green'
+      size='medium'
+      label='Botao Legal :)'
+    />
   </StrictMode>,
 )
