@@ -29,14 +29,15 @@
                 --button-inset-shadow-bottom: inset -2px -2px 0px 0px var(--shadowing-400);
                 --button-inset-shadow-top: inset 2px 2px 0px 0px var(--white-shadowing-500);
                 --button-hidden-outline: var(--hidden) 3px solid;
+                --button-hidden-box-shadow: 3px 3px 0px 0px var(--hidden);
     
             /*ANIMATIONS*/
                 /*HOVER*/
-                    --button-hover-translate: -3px -3px;
-                    --button-hover-shadow:  3px 3px 0px 0px var(--whib-960);
+                    --button-hover-translate: -3px, -3px;
+                    --button-hover-shadow: 3px 3px 0px 0px var(--whib-960);
 
                 /*FOCUS*/
-                    --button-focus-outline: var(--focus-color) 3px solid;
+                    --button-active-outline: var(--focus-color) 4px solid;
             
             /*PADDINGS*/
                 --button-small-padding: 10px;
@@ -91,14 +92,15 @@
     font-size: var(--small-font-size);
     color: var(--text-color);
     border: var(--button-border);
-    box-shadow: var(--button-inset-shadow-top), var(--button-inset-shadow-bottom);
+    box-shadow: var(--button-inset-shadow-top), var(--button-inset-shadow-bottom), var(--button-hidden-box-shadow);
     transition: var(--default-transition-time);
 }
 .b-button:hover {
     transform: translate(var(--button-hover-translate));
+    box-shadow: var(--button-hover-shadow);
 }
 .b-button:active {
-    outline: var(--button-focus-outline);
+    outline: var(--button-active-outline);
 }
 
 .b-button-small-padding {
