@@ -1,9 +1,12 @@
-import { PropsWithChildren } from "react";
+import { ReactNode } from "react";
 
 type IfProps = {
     condition: boolean;
-} & PropsWithChildren
+    children: ReactNode
+};
 
 const If = ({condition, children}: IfProps) => {
     if (condition) return <>{children}</>
 }
+
+export { If }; 
