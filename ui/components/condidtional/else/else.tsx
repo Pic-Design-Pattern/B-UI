@@ -1,7 +1,11 @@
-type ChildrenType = React.PropsWithChildren;
+import { ReactNode } from "react";
 
-const Else = (children: ChildrenType) => {
-    return <>{children}</>;
+type ElseProps = {
+    children: ReactNode
+};
+
+const Else = ({children}: ElseProps) => {
+    return <>{children}</>
 }
 
-export { Else };
+export { Else }; 
