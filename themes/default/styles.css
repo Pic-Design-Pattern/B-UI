@@ -1,5 +1,6 @@
 @import "./colors.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 @font-face {
     font-family: "Pix Chicago";
     src: url("./fonts/pixChicago.woff");
@@ -71,20 +72,86 @@
             /*SHADOWS*/
                 --dialog-top-left-inset-shadow: inset 2px 2px 0px 0px var(--whib-60);
                 --dialog-bottom-right-inset-shadow: inset -2px -2px 0px 0px var(--whib-420);
-                --dialog-content-top-left-shadow: 2px 2px 0px 0px var(--whib-420);
-                --dialog-content-bottom-right-shadow: -2px -2px 0px 0px var(--whib-60);
-                --dialog-shadow: 4px 4px 0px 0px var(--whib-960);
-                --dialog-shadow-blur: 6px 6px 0px 4px var(--shadowing-300);
+                --dialog-content-top-left-shadow: 2px 2px 0px 0px var(--whib-60);
+                --dialog-content-bottom-right-shadow: -2px -2px 0px 0px var(--whib-420);
+                --dialog-over-shadow: 4px 4px 0px 0px var(--whib-960);
+                --dialog-shadow-blur: 2px 2px 4px 4px var(--shadowing-500);
             
                 
             --dialog-background-a: var(--whib-120);
-            --dialog-border: var(--whib-960);
+            --dialog-border: 1px solid var(--whib-960);
             --dialog-shadow: var(--whib-960);
-            --dialog-button-background: var(--whib-60);
-            --dialog-background-image-offshadow: var(--shadowing-300);
+            --dialog-header-button-background: var(--whib-60);
+            --dialog-background-image-offshadow: var(--shadowing-200);
+            --dialog-header-button-hover-shadow: 3px 3px 0px 0px var(--whib-960);
 
 }
 
+/*DIALOG*/
+.b-dialog {
+    border: var(--dialog-border);
+    background-color: var(--dialog-background-a);
+    padding: var(--dialog-padding);
+    box-shadow: var(--dialog-over-shadow), var(--dialog-shadow-blur),
+        var(--dialog-top-left-inset-shadow), var(--dialog-bottom-right-inset-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.b-dialog-body {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background: url("../../public/dialog-content-background.png");
+    background-repeat: repeat;
+    box-shadow: var(--dialog-content-top-left-shadow), var(--dialog-content-bottom-right-shadow);
+    border: var(--dialog-border);
+}
+
+.b-dialog-inner-body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dialog-background-image-offshadow);
+    padding: var(--dialog-padding);
+    box-sizing: border-box;
+}
+
+.b-dialog-header {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.b-dialog-header-buttons {
+    display: flex;
+    flex-direction: row;
+}
+.b-dialog-header-button {
+    height: 100%;
+    background-color: var(--dialog-header-button-background);
+    padding-left: var(--dialog-padding);
+    padding-right: var(--dialog-padding);
+    font-family: "Pix Chicago";
+    font-size: 10px;
+    color: var(--text-color);
+    border: var(--dialog-border);
+    cursor: pointer;
+    transition: var(--default-transition-time);
+}
+.b-dialog-header-button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: var(--dialog-header-button-hover-shadow);
+}
+.b-dialog-header-button:active {
+    outline: var(--button-active-outline);
+}
+
+
+/*BUTTON*/
 .b-button {
     outline: var(--button-hidden-outline);
     cursor: pointer;
@@ -92,7 +159,7 @@
     font-size: var(--small-font-size);
     color: var(--text-color);
     border: var(--button-border);
-    box-shadow: var(--button-inset-shadow-top), var(--button-inset-shadow-bottom), var(--button-hidden-box-shadow);
+    box-shadow: var(--button-inset-shadow-top), var(--button-inset-shadow-bottom);
     transition: var(--default-transition-time);
 }
 .b-button:hover {
@@ -168,4 +235,40 @@
 }
 .b-button-red:active {
     background-color: var(--button-red-active);
+}
+
+h1 {
+    font-size: 26px;
+    margin: 0;
+    font-family: "Actor", sans-serif;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+    font-family: "Actor", sans-serif;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Actor", sans-serif;
+    color: var(--text-color);
+}
+
+p.px {
+    font-size: 12px!important;
+    font-family: "Pix Chicago"!important;
+}
+
+h1.px {
+    font-size: 24px!important;
+    font-family: "Pix Chicago"!important;
+}
+
+h2.px {
+    font-size: 16px!important;
+    font-family: "Pix Chicago"!important;
 }
