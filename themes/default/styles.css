@@ -85,7 +85,38 @@
             --dialog-background-image-offshadow: var(--shadowing-200);
             --dialog-header-button-hover-shadow: 3px 3px 0px 0px var(--whib-960);
 
+        /*INPUT*/
+            --input-text-background: var(--whib-60);
+            --input-text-border: 1px solid var(--whib-960);
+
+            --input-text-text-color: var(--text-color);
+            --input-text-placeholder-text-color: var(--whib-480);
+
+            --input-inner-shadow: inset 2px 2px 0px 0px var(--whib-420);
+            --input-outter-shadow: 2px 2px 0px 0px var(--whib-60); 
+
 }
+
+/*INPUT*/
+.b-input-text {
+    background-color: var(--input-text-background);
+    color: var(--input-text-text-color);
+    font-family: "Pix Chicago";
+    font-size: 12px;
+    box-shadow: var(--input-inner-shadow), var(--input-outter-shadow);
+    height: 40px;
+    border: var(--input-text-border);
+    padding-left: 10px;
+    transition: var(--default-transition-time);
+    box-sizing: border-box;
+}
+.b-input-text::placeholder {
+    color: var(--input-text-placeholder-text-color);
+}
+.b-input-text:focus {
+    outline: var(--button-active-outline);
+}
+
 
 /*DIALOG*/
 .b-dialog {

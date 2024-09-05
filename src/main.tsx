@@ -1,28 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { Button, If, Dialog, Choose, Else } from '@B-UI/components'
-import { DialogButtonProps } from '../ui/types/button.props'
+import { Button, If, Dialog, InputText } from '@B-UI/components'
 
 const App = () => {
-
-  const onClose = () => {
-    console.log("Closing element")
-  }
-
-  const buttons: Array<DialogButtonProps> = [
-    {label: 'X', onClick: onClose},
-    {label: '_'},
-  ]
-
 
   return (
     <>
       <If condition={true}> 
         <Dialog.Root>
-          <Dialog.Header title='Titulo Legal :)' buttons={buttons}/>
+          <Dialog.Header title='Titulo Legal :)'/>
           <Dialog.Body>
-            <Button color='green' size='medium' label='Botao Legal :)' />
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              <InputText placeholder='Teste com o input text' />
+            </div>
           </Dialog.Body>
         </Dialog.Root>
       </If>
