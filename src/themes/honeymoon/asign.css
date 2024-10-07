@@ -1,0 +1,44 @@
+@import "./colors.css";
+
+.honeymoon {
+
+    --generics-default-color: var(--whib-120);
+    --generics-text-color: var(--whib-840);
+    --generics-placeholder-color: var(--whib-480);
+    --generics-border-color: var(--whib-960);
+
+    --context-primary-color: var(--honeymoon-400);
+    --context-primary-background-color: var(--honeymoon-50);
+    --context-primary-text-color: var(--honeymoon-900);
+
+    --context-danger-color: var(--crimson-500);
+    --context-danger-background-color: var(--crimson-50);
+    --context-danger-text-color: var(--crimson-975);
+
+    --context-success-color: var(--chartreuse-300);
+    --context-success-background-color: var(--chartreuse-50);
+    --context-success-text-color: var(--chartreuse-975);
+
+    --context-warning-color: var(--orange-red-500);
+    --context-warning-background-color: var(--orange-red-200);
+    --context-warning-text-color: var(--orange-red-975);
+
+    --context-background-primary-color: var(--whib-60);
+    --context-background-secondary-color: var(--whib-120);
+    --context-background-tertiary-color: var(--whib-180);
+    --context-background-quaternary-color: var(--whib-240);
+    --context-background-quinary-color: var(--whib-300);
+    --context-background-senary-color: var(--whib-360);    
+
+    --context-shadow-primary-color: var(--whib-960);
+    --context-shadow-secondary-color: var(--whib-420);
+    --context-shadow-tertiary-color: var(--whib-360);
+    --context-shadow-quaternary-color: var(--whib-300);
+    --context-shadow-quinary-color: var(--whib-60);
+
+    --context-inverse-text-color: var(--whib-60);
+    --context-inverse-background-primary-color: var(--whib-900);
+    --context-inverse-background-secondary-color: var(--whib-840);
+    --context-inverse-background-tertiary-color: var(--whib-780);
+    --context-inverse-border-color: var(--whib-60);
+}
