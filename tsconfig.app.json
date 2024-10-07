@@ -9,7 +9,7 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
@@ -18,11 +18,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@B-UI/types": ["./ui/types"],
-      "@B-UI/components": ["./ui/components"],
-    }
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["."],
+  "include": ["src"]
 }
