@@ -1,3 +1,51 @@
+@import "./themes/honeymoon/asign.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        
+        --generics-default-color: #ffffff;
+        --generics-text-color: #ffffff;
+        --generics-placeholder-color: #ffffff;
+        --generics-border-color: #ffffff;
+        
+        --context-primary-color: #ffffff;
+        --context-primary-background-color: #ffffff;
+        --context-primary-text-color: #ffffff;
+    
+        --context-danger-color: #ffffff;
+        --context-danger-background-color: #ffffff;
+        --context-danger-text-color: #ffffff;
+    
+        --context-success-color: #ffffff;
+        --context-success-background-color: #ffffff;
+        --context-success-text-color: #ffffff;
+    
+        --context-warning-color: #ffffff;
+        --context-warning-background-color: #ffffff;
+        --context-warning-text-color: #ffffff;
+    
+        --context-background-primary-color: #ffffff;
+        --context-background-secondary-color: #ffffff;
+        --context-background-tertiary-color: #ffffff;
+        --context-background-quaternary-color: #ffffff;
+        --context-background-quinary-color: #ffffff;
+        --context-background-senary-color: #ffffff;    
+    
+        --context-shadow-primary-color: #ffffff;
+        --context-shadow-secondary-color: #ffffff;
+        --context-shadow-tertiary-color: #ffffff;
+        --context-shadow-quaternary-color: #ffffff;
+        --context-shadow-quinary-color: #ffffff;
+    
+        --context-inverse-text-color: #ffffff;
+        --context-inverse-background-primary-color: #ffffff;
+        --context-inverse-background-secondary-color: #ffffff;
+        --context-inverse-background-tertiary-color: #ffffff;
+        --context-inverse-border-color: #ffffff;
+        
+    }
+}
