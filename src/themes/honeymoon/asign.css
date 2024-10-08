@@ -5,6 +5,7 @@
     --generics-default-color: var(--whib-120);
     --generics-text-color: var(--whib-840);
     --generics-placeholder-color: var(--whib-480);
+    --generics-active-color: var(--honeymoon-200);
     --generics-border-color: var(--whib-960);
 
     --context-primary-color: var(--honeymoon-400);
@@ -35,6 +36,9 @@
     --context-shadow-tertiary-color: var(--whib-360);
     --context-shadow-quaternary-color: var(--whib-300);
     --context-shadow-quinary-color: var(--whib-60);
+    --context-shadow-25-primary-color: #00000030;
+    --context-shadow-50-primary-color: #00000070;
+    --context-shadow-75-primary-color: #000000cc;
 
     --context-inverse-text-color: var(--whib-60);
     --context-inverse-background-primary-color: var(--whib-900);

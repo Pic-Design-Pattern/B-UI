@@ -1,0 +1,19 @@
+
+.btn {
+    border: 1px solid var(--generics-border-color);
+    transition: 300ms;
+    box-shadow: inset 2px 2px 0px 0px var(--context-background-primary-color),
+                inset -2px -2px 0px 0px var(--context-background-senary-color);
+}
+
+.btn:hover {
+    box-shadow: inset 2px 2px 0px 0px var(--context-background-primary-color),
+                inset -2px -2px 0px 0px var(--context-background-senary-color),
+                4px 4px 0px 0px var(--context-shadow-primary-color), 
+                6px 6px 4px var(--context-shadow-25-primary-color);
+    transform: translate(-4px, -4px);
+}
+
+.btn:active {
+    outline: 4px solid var(--generics-active-color);
+}

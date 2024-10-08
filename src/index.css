@@ -40,6 +40,9 @@
         --context-shadow-tertiary-color: #ffffff;
         --context-shadow-quaternary-color: #ffffff;
         --context-shadow-quinary-color: #ffffff;
+        --context-shadow-25-primary-color: #ffffff;
+        --context-shadow-50-primary-color: #ffffff;
+        --context-shadow-75-primary-color: #ffffff;
     
         --context-inverse-text-color: #ffffff;
         --context-inverse-background-primary-color: #ffffff;
