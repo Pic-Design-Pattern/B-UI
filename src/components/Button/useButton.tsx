@@ -20,9 +20,9 @@ const sizeAdapter = (buttonSize: ButtonSize) => {
 
 const useButton = (props: ButtonProps) => {
     const configurableStyle = sizeAdapter(props.size) + " " + colorAdapter(props.color);
-
+    const { children } = props;
     return {
-        configurableStyle
+        configurableStyle, children
     }
 }
 
