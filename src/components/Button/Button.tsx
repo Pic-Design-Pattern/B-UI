@@ -7,7 +7,7 @@ const Button = (props: ButtonProps) => {
     const { children } = props;
     const htmlAttributes = {...props as Omit<ButtonProps, keyof ButtonConfig | "children">}
     
-    return <button {...htmlAttributes} className={ configurableStyle + " btn"}> { children } </button>
+    return <button {...htmlAttributes} className={ configurableStyle + " btn pixel-text"}> { children } </button>
 }
 
 export default Button;

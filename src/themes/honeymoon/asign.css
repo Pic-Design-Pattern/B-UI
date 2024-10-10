@@ -1,5 +1,11 @@
 @import "./colors.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@font-face {
+    font-family: "Pix Chicago";
+    src: url("../fonts/pixChicago.woff");
+}
+
 .honeymoon {
 
     --generics-default-color: var(--whib-120);
@@ -45,4 +51,17 @@
     --context-inverse-background-secondary-color: var(--whib-840);
     --context-inverse-background-tertiary-color: var(--whib-780);
     --context-inverse-border-color: var(--whib-60);
+}
+
+.pixel-text {
+    color: var(--generics-text-color);
+    font-family: "Pix Chicago";
+    font-size: 10px;
+}
+
+.text {
+    color: var(--generics-text-color);
+    font-family: "Actor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
